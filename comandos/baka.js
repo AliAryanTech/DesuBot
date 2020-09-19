@@ -3,9 +3,9 @@ const desu = require("./config/desu.json");
 const banimentos = require("./class/mutado.js");
 
 module.exports.run = async (client, message, args) => {
-    if(message.author.id != "268778657814675456"){
-        return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
-    }
+    //if(message.author.id != "268778657814675456"){
+    //    return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
+    //}
     var role_baka = message.guild.roles.cache.find(role => role.id === "562856051599212544");
     var frase = message.content;
     frase = frase.substr(5);
