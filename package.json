@@ -1,0 +1,26 @@
+{
+  "name": "dekomori",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "akaneko": "^3.0.2",
+    "dabi-images": "^2.7.5",
+    "discord.js": "^12.2.0",
+    "ffmpeg-static": "^4.2.5",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "opusscript": "0.0.7",
+    "serialize-json": "^1.0.3",
+    "tenorjs": "^1.0.7",
+    "ytdl-core": "^3.2.2"
+  }
+}
