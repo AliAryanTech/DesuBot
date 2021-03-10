@@ -3,9 +3,9 @@ const desu = require("./config/desu.json");
 const banimentos = require("./class/mutado.js");
 
 module.exports.run = async (client, message, args) => {
-    //if(message.author.id != "268778657814675456"){
-    //    return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
-    //}
+    if(message.author.id != "268778657814675456"){
+       return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
+    }
     var role_softban = message.guild.roles.cache.find(role => role.id === "707690115194945659");
     var frase = message.content;
     frase = frase.substr(8);
@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
       "fields": [
         {
             "name": "Tempo:",
-            "value": "72 horas",
+            "value": "1 hora",
             "inline": true
           }
       ]
@@ -40,4 +40,5 @@ module.exports.run = async (client, message, args) => {
       
       setTimeout(function(){ membro.roles.add(role_softban); banimentos.addSoftban(membro.user.id);
       }, 1000);
+
 }

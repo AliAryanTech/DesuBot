@@ -52,7 +52,7 @@ module.exports.run = async (client, message, args) => {
             message.reply("Um segredo deixa de ser segredo quando todos sabem :/");
         }
         if(attcount > 0){
-            message.delete({ timeout: 1000 });
+            message.delete({ timeout: 1500 });
         }else{
             message.delete();
         }

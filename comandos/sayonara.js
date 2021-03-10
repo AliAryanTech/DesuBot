@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 const desu = require("./config/desu.json");
 
 module.exports.run = async (client, message, args) => {
-    //if(message.author.id != "268778657814675456"){
-    //    return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
-    //}
+    if(message.author.id != "268778657814675456"){
+        return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
+    }
     var frase = message.content;
     frase = frase.substr(9);
     var membro = message.mentions.members.first();

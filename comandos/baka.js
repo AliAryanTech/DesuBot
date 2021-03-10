@@ -3,13 +3,13 @@ const desu = require("./config/desu.json");
 const banimentos = require("./class/mutado.js");
 
 module.exports.run = async (client, message, args) => {
-    //if(message.author.id != "268778657814675456"){
-    //    return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
-    //}
+    if(message.author.id != "268778657814675456"){
+        return message.reply("So respondo ao meu mestre quando a coisa é seria! :X");
+    }
     var role_baka = message.guild.roles.cache.find(role => role.id === "562856051599212544");
     var frase = message.content;
     frase = frase.substr(5);
-    var membro = message.mentions.members.first();
+    var membro = message.member;
     const embed = {
       "title": membro.user.username + " se tornou uma pessoa no Desu!",
       "description": "Começou a dentadura do master??? oh não que triste! ",
@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
         },
         {
             "name": "Tempo:",
-            "value": "5 minutos",
+            "value": "15 minutos",
             "inline": true
           }
       ]
@@ -47,5 +47,5 @@ module.exports.run = async (client, message, args) => {
       }, 1000);
 
       setTimeout(function(){ membro.roles.add(role_baka); banimentos.removePessoa(membro.user.id);
-      }, 300000);
+      }, 900000);
 }

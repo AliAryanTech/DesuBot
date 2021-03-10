@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
-    var conta = ["tdumqyoppijwthxfzb@niwghx.online"];
+    var conta = ["mcxrakirqzkokpyifb@miucce.com"];
     var senha = ["pikapika123"];
-    var data = ["02/09/2020"];
+    var data = ["07/02/2021"];
 
     var i = 0;//Math.floor(Math.random() * 2);
 

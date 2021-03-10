@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Agradecimento a umas pessoas ae.">
+    <meta property="og:image" content= "https://cdn.discordapp.com/emojis/744772578614444134.png?v=1" >
+    <meta name="theme-color" content="#000001">
+
+
+    <meta property="og:title" content="AwayDreams">
+
+
+    <title>⠀⠀⠀⠀⠀⠀⠀⠀The best 2020⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</title>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/emojis/710771896521850880.gif?v=1" type="image/gif">
+
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+</head>
+
+<body>
+    <div id="center">
+        <div id="avatar"
+            style="background-image: url('friends/icones/eu.png')">
+        </div>
+        <div id="name">
+            AwayDreams
+        </div>
+        <div id="friends" style="cursor:pointer" onclick="redirect()">FRIENDS</div>
+    </div>
+    <script>
+        const redirect = () => window.location.href = "/friends"
+        document.body.style.backgroundImage = `url('https://cutewallpaper.org/21/1080p-gif-wallpaper/Animation-Gif-Wallpapers-Wallpaper-Cave.gif')`
+    </script>
+
+    <script> var repeat = 1
+        var title = document.title
+        var leng = title.length
+        var start = 1
+        function titlemove() {
+            titl = title.substring(start, leng) + title.substring(0, start)
+            document.title = titl
+            start++
+            if (start == leng + 1) {
+                start = 0
+                if (repeat == 0) return
+            }
+            setTimeout("titlemove()", 400)
+        }
+        if (document.title)
+            titlemove()
+    </script>
+
+
+</body>
+
+</html>

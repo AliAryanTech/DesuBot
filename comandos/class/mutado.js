@@ -1,6 +1,6 @@
 module.exports =  class test {
-    static names = [""];
-    static softban = [""];
+    static names = ["438511410281185281"];
+    static softban = ["438511410281185281"];
     static addPessoa(nome){
         this.names.push(nome);
     }
